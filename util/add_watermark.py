@@ -20,7 +20,7 @@ def rotate_image(image, angle, center = None, scale = 1.0):
     return rotated
 
 class watermark_image:
-    def __init__(self, logo_path, size=0.3, oritation="DR", margin=(5,20,20,20), angle=15, rgb_weight=(0,1,1.5), input_frame_shape=None) -> None:
+    def __init__(self, logo_path, size=0.5, oritation="DR", margin=(5,20,20,20), angle=0, input_frame_shape=None) -> None:
 
         logo_image = cv2.imread(logo_path, cv2.IMREAD_UNCHANGED)
         h,w,c = logo_image.shape
